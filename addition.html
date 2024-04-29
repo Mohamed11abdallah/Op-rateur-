@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addition</title>
-    <link rel="stylesheet" href="addition.css">
+    <title>Multiplication</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="addition.js"></script>
 </head>
 <body>
-    <h2>Addition</h2>
-    <form id="additionForm" onsubmit="calculate(event)">
-        <label for="num1">Nombre 1:</label>
-        <input type="number" id="num1" name="num1" required>
-        <label for="num2">Nombre 2:</label>
-        <input type="number" id="num2" name="num2" required>
-        <label for="num3">Nombre 3</label>
-        <input type="number" id="num3" name="num3">
-        <button type="submit">Calculer</button>
-    </form>
-    <p id="result"></p>
-    <script src="addition.js"></script>
+    <div class="container">
+        <h2>Addition</h2>
+        <form id="calculatorForm">
+            <div class="input-group">
+                <label for="num1">Entrer le premier nombre:</label>
+                <input type="number" id="num1" required>
+            </div>
+            <div class="input-group">
+                <label for="num2">Entrer le deuxième nombre:</label>
+                <input type="number" id="num2" required>
+            </div>
+            <div class="input-group">
+                <label for="num3">Entrer le troisième nombre</label>
+                <input type="number" id="num3" required>
+            </div>
+            <button type="button" onclick="calculate()">Calculer</button>
+            <p id="result"></p>
+        </form>
+    </div>
     
 </body>
 </html>
