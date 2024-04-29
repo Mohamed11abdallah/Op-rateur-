@@ -1,14 +1,20 @@
 function calculate() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    
-    num1 = parseFloat(num1);
-    num2 = parseFloat(num2);
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var num3 = parseFloat(document.getElementById("num3").value);
 
-    if (isNaN(num1) || isNaN(num2)) {
-        alert("Veuillez entrer des nombres valides.");
+    var result;
+    if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+        result = num1 * num2 * num3;
+    } else if (!isNaN(num1) && !isNaN(num2)) {
+        result = num1 * num2;
+    } else if (!isNaN(num1) && !isNaN(num3)){
+        result = num1 * num3;
+    } else if (!isNaN(num2) && !isNaN(num3)) {
+        result = num2 * num3;
+    } else {
+        document.getElementById("result").innerText = "Veuillez saisir au moins deux nombres valides.";
         return;
     }
-    var result = num1 * num2;
-    document.getElementById("result").innerHTML = "Le résultat de la multiplication est : " + result;
+    document.getElementById("result").innerText = "Le résultat de la multiplication est :" + result;
 }
