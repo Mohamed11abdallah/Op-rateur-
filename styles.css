@@ -3,17 +3,27 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-image: url(img.jpg);
 }
 .container {
-    max-width: 400px;
+    max-width: 800px;
     margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #FFF2D7;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
 }
+li {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
 h2 {
     text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .input-group {
     margin-bottom: 15px;
